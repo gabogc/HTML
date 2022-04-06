@@ -4,7 +4,7 @@ height: 850px;
 align-items: center;
 display: flex;
 justify-content: center;
-margin:
+animation: size;
 
 }
 
@@ -24,29 +24,57 @@ background: linear-gradient( rgba(255, 0, 255, 1), yellow);
 height: 80%;
 width: 80%;
 margin: auto;
+padding: 20px;
 border-radius: inherit;
 display: flex;
-justify-content: left;
 border: solid;
+flex-direction: column;
+animation: size 0.1s infinite;
 }
 
 .div3 {
-  background: linear-gradient( 90deg, rgba(255, 150, 55, 1) , rgba(255, 0, 0, 1) );
+  /* background: linear-gradient( 90deg, rgba(255, 150, 55, 1) , rgba(255, 0, 0, 1) ); */
   height: 50%;
   width: 50%;
   margin: auto;
   border-radius: inherit;
-
+  flex-direction: column;
   border: solid;
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: size2 0.1s infinite;
 }
 
 h1
 {
   background:linear-gradient(rgba(0, 50, 100, 0.5), rgba(0, 0, 255, 0.7));
   border: solid 5px black;
-  border-radius: 5px
+  border-radius: 5px;
+  font-family: cursive;
+  font-style: cursive;
+  padding: 5px;
+display: block;
+}
 
+form {
+  margin: auto;
+  display: block;
+}
+
+
+
+@keyframes size {
+from {background-color: blue;}
+to {background-color: red;}
+}
+
+
+@keyframes size2 {
+from {background-color: linear-gradient(rgba(0, 50, 100, 0.5), rgba(0, 0, 255, 0.7));}
+to {background-color: rgba(0, 0, 255, 0.5);}
+}
+
+h3 {
+  animation: size 0.1s infinite;
 }
