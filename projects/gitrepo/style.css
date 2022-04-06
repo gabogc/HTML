@@ -1,16 +1,16 @@
 body {
-background-color: rgba(255, 255, 0, 0.5);
-height: 850px;
-align-items: center;
-display: flex;
-justify-content: center;
-animation: size;
+  background-color: rgba(255, 255, 0, 0.5);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  animation: size;
 
+}
 }
 
 .div1 {
   background: linear-gradient( rgba(0, 255, 255, 1), darkgreen ) ;
-height: 80%;
+  height: 80%;
   width: 80%;
   margin: auto;
   text-align: center;
@@ -20,16 +20,16 @@ height: 80%;
 }
 
 .div2 {
-background: linear-gradient( rgba(255, 0, 255, 1), yellow);
-height: 80%;
-width: 80%;
-margin: auto;
-padding: 20px;
-border-radius: inherit;
-display: flex;
-border: solid;
-flex-direction: column;
-animation: size 0.1s infinite;
+ background: linear-gradient( rgba(255, 0, 255, 1), yellow);
+ height: 80%;
+ width: 80%;
+ margin: auto;
+ padding: 20px;
+ border-radius: inherit;
+ display: flex;
+ border: solid;
+ flex-direction: column;
+ animation: size 0.1s infinite;
 }
 
 .div3 {
@@ -54,7 +54,11 @@ h1
   font-family: cursive;
   font-style: cursive;
   padding: 5px;
-display: block;
+  display: block;
+}
+
+h3 {
+  animation: size 0.1s infinite;
 }
 
 form {
@@ -62,19 +66,12 @@ form {
   display: block;
 }
 
-
-
 @keyframes size {
-from {background-color: blue;}
-to {background-color: red;}
+  from {background-color: blue;}
+  to {background-color: red;}
 }
-
 
 @keyframes size2 {
-from {background-color: linear-gradient(rgba(0, 50, 100, 0.5), rgba(0, 0, 255, 0.7));}
-to {background-color: rgba(0, 0, 255, 0.5);}
-}
-
-h3 {
-  animation: size 0.1s infinite;
+  from {background-color: linear-gradient(rgba(0, 50, 100, 0.5), rgba(0, 0, 255, 0.7));}
+  to {background-color: rgba(0, 0, 255, 0.5);}
 }
